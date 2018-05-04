@@ -1,0 +1,29 @@
+body {
+    font-family: 'Playfair Display','Ubuntu', sans-serif;
+    color: #626262;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: #ffffff}
+.site-navigation {
+    font-size: 14px;
+    list-style: none;}
+.site-navigation a {
+    color: #626262;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 24px;}
+.rows h3 {
+    list-style: none;
+    color: #626262;
+    font-size: 30px;
+    line-height: 36px;}
+.rows h2 {
+    color: #b4ad9e;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;}
+    button {
+        width: 164px;
+        height: 60px;
+        font-size: 20px;}
+        
