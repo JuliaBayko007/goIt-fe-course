@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+    .wrapper {
+        font-family: Roboto, OpenSans, sans-serif;
+        background: #fff;
+        padding-top: 38px;
+        padding-bottom: 85px;
+    }
+
+     .container {
+        width: 1110px;
+        margin: 0px auto;
+    }
+
+    .logo {
+        text-transform: uppercase;
+        font-size: 30px;
+        line-height: 32px;
+        font-weight: 300;
+        color: #000000;
+        float: left;
+    }
+
+    .logo:first-letter {
+        color: #1abc9c;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .menu {
+        float: right;
+    }
+
+    .menu-item {
+        margin-right: 33px;
+        float: left;
+    }
+
+    .menu-item:last-child {
+        margin-right: 0;
+    }
+
+    .menu-link {
+        display: block;
+        line-height: 11px;
+        color: #0f0101;
+    }
+
+    .menu-link:hover {
+        color: #1abc9c;
+    }
+
+    .clearfix::after {
+        display: table;
+        content: '';
+        clear: both;
+    }
+
+   /* .header clearfix {
+    margin-bottom: 105px;}*/
+
+   .title {
+        margin-top: 105px;
+        margin-bottom: 120px;
+        line-height: 32px;
+        font-family: Roboto; 
+        font-size: 48px;
+        font-weight: 900;
+        text-align: center;
+        color: #515151;
+    }  
+    
+    .title:after {
+        content: '';
+        width: 164px;
+        height: 7px;
+        background-color: #1abc9c;
+        display: block;
+        margin: 32px auto 0;
+    } 
+
+    .card {
+        width: 255px;
+        height: 322px;
+        background-color: #e9f0fd;
+        float: left;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    .card:nth-last-child(-n+4) {
+        margin-bottom: 0;
+    }
+
+    .card:nth-child(4n) {
+        margin-right: 0;
+    }
+
+    .name, .price {
+        height: 40px;
+        background-color: #323232;
+        float: left;
+        width: 200px;
+        font-family: Roboto;
+        font-weight: 900;
+        color: #fff;
+        font-size: 18px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    .price {
+        background-color: #8c8c8c;
+        width: 55px;
+    }
+
+    .card:hover .name {
+        background-color: #1abc9c;
+    }
+    
+    .card:hover .price {
+        background-color: #7fd9c7;}
+    
+  /* .products {
+        margin-bottom: 50px ;
+    }
+    
+    article {
+        width: 300px;
+        height: 500px;
+        background-color: brown;
+        float: left;
+        margin-right: 30px;
+    }
+    
+    article:last-child {
+        margin-right: 0;
+    } */
