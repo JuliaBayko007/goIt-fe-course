@@ -21,10 +21,40 @@
         font-size: 30px;
         line-height: 32px;
         font-weight: 300;
+.order {
+    background: rgba(0, 0, 0, 0.6);
+     position: absolute;
+     top: 0;
+     left: 0;
+    width: 100%;
+     height: calc(100% - 20px);
+    border: 10px solid rgba(255, 255, 255, 0.4);
+   /* display: none;*/
+ }
+ 
+ .icon-container {
+     position: absolute;
+     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+ 
+ .box8 {
+    width: 30px;
+     height: 30px;
+    background-color: green;
+    display: inline-block;
+ }
+ 
+ .card:hover > .order {
+    display: block;
+ }
+ 
+ .box8:hover {    background-color: red;
+ }
         color: #000000;
         float: left;
         margin-bottom: 38px;
-        margin-left: 245px;
     }
 
     .logo:first-letter {
@@ -50,7 +80,7 @@
     }
 
     .menu-item:last-child {
-        margin-right: 245px;
+        margin-right: 0;
     }
 
     .menu-link {
@@ -136,6 +166,11 @@
         margin-bottom: 100px;
     }
 
+
+    .card:nth-child(4n) {
+        margin-right: 0;
+    }
+
     .name, .price {
         height: 40px;
         width: 200px;
@@ -171,9 +206,6 @@
         text-align: justify;
         margin-bottom: 16px;
     }
-
-    
-
 
     .footer {
         background-color: #323232;
