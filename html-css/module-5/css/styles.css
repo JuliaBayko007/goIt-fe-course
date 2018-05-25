@@ -4,6 +4,34 @@
     box-sizing: border-box;
 } 
 
+    @font-face {
+        font-family: 'OpenSans'
+        src: url('../fonts/OpenSans-Bold/OpenSans-Bold.ttf') format('truetype');
+        font-weight: Bold;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'OpenSans'
+        src: url('../fonts/OpenSans-Regular/OpenSans-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Roboto'
+        src: url('../fonts/Roboto-Black/Roboto-Black.ttf') format('truetype');
+        font-weight: Black;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Roboto'
+        src: url('../fonts/Roboto-Light/Roboto-Light.ttf') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+    }
+
     .wrapper1 {
         background: #fff;
         padding-top: 38px;
@@ -12,12 +40,12 @@
 
 
     .container {
-        font-family:"Roboto", "OpenSans", sans-serif;
         width: 1110px;
         margin: 0px auto;
     }
 
     .logo {
+        font-family: 'Roboto-Light', sans-serif;
         text-transform: uppercase;
         font-size: 30px;
         line-height: 32px;
@@ -54,10 +82,12 @@
 
     .menu-link {
         display: block;
-        font-family: "Open Sans", sans-serif;
-        font-weight: bold;
+        font-family: 'OpenSans', sans-serif;
+        font-weight: Bold;
+        font-size: 14px;
         line-height: 11px;
         color: #0f0101;
+        text-transform: uppercase;
     }
 
     .menu-link:hover {
@@ -76,7 +106,8 @@
     }
 
     .slider-title {
-        font-family:"Roboto", sans-serif;
+        font-family:'Roboto', sans-serif;
+        font-weight: 300;
         font-size: 28px;
         line-height: 38px;
         text-transform: uppercase;
@@ -90,23 +121,30 @@
         line-height: 82px;
     }
 
-    .to-left {
+    .button {
         position: absolute;
         width:104px ;
         height: 104px;
-        color: #fff ;
+        padding: 30px, 41px, 36px;
         background-color: #1ABC9C;
+        border: none;
         cursor: pointer;
     }
 
-    .to-right {
+    .btn-right {
         position: absolute;
         right: 119px;
-        width:104px ;
-        height: 104px;
-        color: #fff ;
-        background-color: #1ABC9C;
-        cursor: pointer;
+    }
+
+    .button:hover {
+        background-color: #4EC6AB;
+        opacity: 0.65;
+    }
+
+    .button>.fas {
+        font-size: 80px;
+        color:#FFFFFF;
+        text-align: center;
     }
     
     .wrapper3 {
@@ -117,7 +155,7 @@
    .title {
         margin-bottom: 120px;	
         color: #515151;	
-        font-family:"Roboto", sans-serif;	
+        font-family:'Roboto', sans-serif;	
         font-size: 48px;	
         font-weight: 900;		
         line-height: 32px;	
@@ -161,9 +199,11 @@
         display: inline-block;
         font-size: 14px;
         line-height: 32px;
+        font-family:'OpenSans', sans-serif;
         color: #fff;
-        font-weight: 400;
+        font-weight: normal;
         text-transform: uppercase;
+        text-align: center;
     }
 
     .card {
@@ -272,16 +312,24 @@
         position: absolute;
         bottom: 0px;
         left: 0px;
-        text-align: center;
+        background-color: #1ABC9C;
+    }
+
+    .box1:hover {
         background-color: #323232;
     }
 
-    .text {
-        color: #555252;		
-        font-size: 14px;
-        line-height: 26px;
-        text-align: justify;
-        margin-bottom: 16px;
+    .box2:hover {
+        background-color: #323232; 
+    }
+
+    .box3:hover {
+        background-color: #323232;
+    }
+
+    .box4:hover {
+        background-color: #323232;
+        transform: scale(1.3);
     }
 
     .wrapper4 {
@@ -292,7 +340,8 @@
 
     .copyright {
         color: #FEFEFE;
-        font-family:"Open Sans", sans-serif;
+        font-family:'Open Sans', sans-serif;
+        font-weight: normal;
         font-size: 16px;	
         line-height: 28px;	
         text-align: center;

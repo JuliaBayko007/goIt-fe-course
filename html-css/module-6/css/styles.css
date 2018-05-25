@@ -18,7 +18,12 @@
     .container {
         width: 1200px;
         margin: 0px auto;
-        flex-direction: row;
+        
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
     }
 
     .logo {
@@ -38,25 +43,25 @@
 
     ul {
        list-style: none;
-       display: flex;
+      
+      
     }
 
     .menu {
-        flex-wrap: wrap;
+        display: flex;
         justify-content: space-between;
-
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 491px;
+        height: 27px;
         
-    }
+       }
 
     .menu-item {
         text-decoration: none;
-        flex-grow: 
-
-        
     }
 
     .menu-link {
-       /* display: block;*/
         font-family:'Montserrat', sans-serif;
         font-weight: 400;
         font-size: 14px;
@@ -65,9 +70,26 @@
         text-transform: uppercase;
     }
 
+  
+
+    .menu-link:hover {
+        border-bottom: 3px solid; 
+        padding-bottom: 12px; 
+        color:  #F38181;
+
+    }
+    .service-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    
+
     
     .service-list-item {
-        justify-content: space-around;
+        width: 30%;
     }
 
     .item-title {
@@ -77,8 +99,6 @@
         font-weight: 400;
         color: #333333;
         text-transform: uppercase;
-
-
     }
 
    
@@ -95,6 +115,94 @@
     .title::first-letter {
         font-size: 40px;
     }
+
+    .subtitle {
+        color: #333333;	
+        font-family:'Montserrat', sans-serif;	
+        font-size: 30px;	
+        font-weight: bold;	
+        line-height: 36px;	
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .team-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .team-item {
+        width: 30%;
+    }
+
+  
+
+    .text {
+        color: #999999;
+        font-family:"Roboto", sans-serif;	
+        font-size: 15px;	
+        line-height: 24px;	
+        text-align: center;
+        font-weight: normal;
+    }
+
+    .item-name {
+        color: #333333;	
+        font-family:'Montserrat', sans-serif;	
+        font-size: 14px;	
+        line-height: 17px;	
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .item-occupation {
+        color: #999999;	
+        font-family: "Roboto";	
+        font-size: 15px;	
+        font-style: italic;	
+        font-weight: 300;	
+        line-height: 24px;	
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .icon-container {
+        height: 470px;	
+        width: 380px;	
+        background-color: #95E1D3;	
+        background: linear-gradient(270deg, #F38181 0%, #FCE38A 100%);
+        /*display: none;*/
+        
+    }
+
+    .boxes {
+        display: flex;
+        width: 224px;
+       
+    }
+
+    .box {
+        
+        width: 56px;
+        height: 56px;
+        border-right: 1px solid;
+        color:  #F38181;
+        background: #FCE38A;
+        text-align: center;
+
+        
+    }
+
+    .box:last-child {
+        border-right: none;
+    }
+
+    .team-item:hover>.icon-container {
+        display: block;
+    }
+
+
+
 
     .input {
         width: 230px;
