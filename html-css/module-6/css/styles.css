@@ -34,9 +34,9 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src:url('../fonts/Montserra/montserrat-v12-latin-regular.woff2')format('woff2'),
-         url('../fonts/Montserra/montserrat-v12-latin-regular.woff')format('woff'), 
-         url('../fonts/Montserra/montserrat-v12-latin-regular.ttf')format('truetype');
+    src:url('../fonts/Montserrat/montserrat-v12-latin-regular.woff2')format('woff2'),
+         url('../fonts/Montserrat/montserrat-v12-latin-regular.woff')format('woff'), 
+         url('../fonts/Montserrat/montserrat-v12-latin-regular.ttf')format('truetype');
     font-style: normal;
     font-weight: 400;
   }
