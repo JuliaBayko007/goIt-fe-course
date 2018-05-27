@@ -6,28 +6,28 @@
 
     @font-face {
         font-family: 'OpenSans';
-        src: url('../fonts/OpenSans-Bold/OpenSans-Bold.ttf')format('truetype');
+        src: url('../fonts/OpenSans/OpenSans-Bold.ttf')format('truetype');
         font-weight: Bold;
         font-style: normal;
     }
 
     @font-face {
         font-family: 'OpenSans';
-        src: url('../fonts/OpenSans-Regular/OpenSans-Regular.ttf')format('truetype');
+        src: url('../fonts/OpenSans/OpenSans-Regular.ttf')format('truetype');
         font-weight: normal;
         font-style: normal;
     }
 
     @font-face {
         font-family: 'Roboto';
-        src: url('../fonts/Roboto-Black/Roboto-Black.ttf')format('truetype');
-        font-weight: Black;
+        src: url('../fonts/Roboto/Roboto-Black.ttf')format('truetype');
+        font-weight: 900;
         font-style: normal;
     }
 
     @font-face {
         font-family: 'Roboto';
-        src: url('../fonts/Roboto-Light/Roboto-Light.ttf')format('truetype');
+        src: url('../fonts/Roboto/Roboto-Light.ttf')format('truetype');
         font-weight: 300;
         font-style: normal;
     }
@@ -45,7 +45,7 @@
     }
 
     .logo {
-        font-family: 'Roboto-Light', sans-serif;
+        font-family: 'Roboto', sans-serif;
         text-transform: uppercase;
         font-size: 30px;
         line-height: 32px;
@@ -340,7 +340,7 @@
 
     .copyright {
         color: #FEFEFE;
-        font-family:'Open Sans', sans-serif;
+        font-family:'OpenSans', sans-serif;
         font-weight: normal;
         font-size: 16px;	
         line-height: 28px;	
