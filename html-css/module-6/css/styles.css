@@ -324,11 +324,13 @@
         line-height: 24px;
         text-align: justify;
         text-transform: capitalize;
-        border: 1px solid #E5E5E5;
-        border-right: none;
+       
+        border: none;
         margin-right: 0px;
-        
+    }
 
+    .input-border {
+        border: 1px solid #E5E5E5;
     }
 
     .input::placeholder {
@@ -348,6 +350,7 @@
         text-transform: uppercase;	
         text-align: center;
         border: none;
+        margin-bottom: 1px;
     }
 
     .footer::before {
@@ -368,7 +371,16 @@
         font-weight: normal;
     }
 
-    .colortext {
+    .colortext{
+        color: #333333;	
+        font-family: 'Montserrat', sans-serif;	
+        font-size: 14px;	
+        line-height: 17px;	
+        text-align: center;
+        font-weight: normal;
+    }
+
+    .colortext:hover {
         color: #F38181;
     
     }
