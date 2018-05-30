@@ -141,9 +141,6 @@
 
   .service-item {
     flex-basis: 31%;
-   
-
-
   }
 
 
@@ -167,10 +164,16 @@
   }
 
   .footer-wrapper {
-    background-color: #222222;
     padding-top: 110px;
     padding-bottom: 115px;
+    background-color:rgba(34,34,34,.9);
+    background-image: url('../img/Map Image.png');
+    background-position: 103% 84%;
+    background-repeat: no-repeat;
+  
   }
+  
+
 
   .form-title {
     font-family: 'Montserrat', sans-serif;
@@ -183,12 +186,15 @@
     margin-bottom: 23px;
   }
 
+  textarea {
+    padding-top: 10px;
+  }
+
   .input {
     font-family: 'Montserrat', sans-serif;	
     font-size: 14px;
     font-weight: bold;	
     line-height: 16px;
-    color: #BBBBBB;
     text-transform: uppercase;
     width: 455px;
     flex-basis: 33%;
@@ -233,18 +239,33 @@
  
 }
 
-input {
-  outline: none;
+
+input::placeholder {
+  color: #BBBBBB;
+}
+
+textarea::placeholder {
+  color: #BBBBBB; 
+}
+
+textarea:required:valid {
+  outline-width: 2px;
+  outline-color:  green; 
+}
+
+textarea:required:invalid {
+  outline-width: 2px;
+  outline-color:  red;
 }
 
 input:required:valid {
-  outline-width: 1px;
+  outline-width: 2px;
   outline-color:  green;
 
 }
 
 input:required:invalid {
-  outline-width: 1px;
+  outline-width: 2px;
   outline-color:  red;
 }
   
