@@ -331,6 +331,7 @@
 
     .input-border {
         border: 1px solid #E5E5E5;
+       
     }
 
     .input::placeholder {
@@ -350,7 +351,7 @@
         text-transform: uppercase;	
         text-align: center;
         border: none;
-        margin-bottom: 1px;
+        vertical-align: top;
     }
 
     .footer::before {
