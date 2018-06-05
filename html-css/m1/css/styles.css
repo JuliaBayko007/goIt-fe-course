@@ -5,228 +5,25 @@
 } 
 
     .wrapper {
-        font-family:"Roboto", "OpenSans", sans-serif;
+        font-family:'Roboto', sans-serif;
         background: #fff;
-        width: 1600px;
-        padding-top: 38px;
+        width: 1200px;
+        padding-top: 20px;
     }
 
-     /*.container {
+    /* .container {
         width: 1110px;
         margin: 0px auto;
     }
 */
-    .logo {
-        text-transform: uppercase;
-        font-size: 30px;
-        line-height: 32px;
-        font-weight: 300;
-.order {
-    background: rgba(0, 0, 0, 0.6);
-     position: absolute;
-     top: 0;
-     left: 0;
-    width: 100%;
-     height: calc(100% - 20px);
-    border: 10px solid rgba(255, 255, 255, 0.4);
-   /* display: none;*/
- }
- 
- .icon-container {
-     position: absolute;
-     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
- }
- 
- .box8 {
-    width: 30px;
-     height: 30px;
-    background-color: green;
-    display: inline-block;
- }
- 
- .card:hover > .order {
-    display: block;
- }
- 
- .box8:hover {    background-color: red;
- }
-        color: #000000;
-        float: left;
-        margin-bottom: 38px;
+    .box1 {
+        width: 30%
     }
 
-    .logo:first-letter {
-        color: #1abc9c;
-        font-weight: 900;
+    .box2 {
+        width: 45%;
     }
 
-    a {
-        text-decoration: none;
-    }
-
-    ul {
-        list-style: none;
-    }
-
-    .menu {
-        float: right;
-    }
-
-    .menu-item {
-        margin-right: 33px;
-        float: left;
-    }
-
-    .menu-item:last-child {
-        margin-right: 0;
-    }
-
-    .menu-link {
-        display: block;
-        font-family: "Open Sans", sans-serif;
-        font-weight: bold;
-        line-height: 11px;
-        color: #0f0101;
-    }
-
-    .menu-link:hover {
-        color: #1abc9c;
-    }
-
-    .slider-box {
-        width: 1600px;
-        height: 600px;
-        background-image: url (img/slide4.jpg);
-        background-color: green;
-    }
-
-    .slider-title {
-        font-family:"Roboto", sans-serif;
-        font-weight: 900;	
-        font-size: 60px;	
-        line-height: 82px;
-        color: #fff;
-        text-align: center;
-    }
-
-    .slider-title:hover {
-        color: #ff7200;
-    }
-
-    .to-left {
-        position: fixed;
-        width:104px ;
-        height: 104px;
-        color: #fff ;
-        background-color: #1ABC9C;
-    }
-
-    .to-right {
-        position: fixed;
-        width:104px ;
-        height: 104px;
-        color: #fff ;
-        background-color: #1ABC9C;
-    }
-    .fontsize {
-        font-size: 28px;
-        text-transform: uppercase;
-        color: #fff;*
-    }
-
-   .title {
-        margin-top: 101px;
-        margin-bottom: 120px;	
-        color: #515151;	
-        font-family:"Roboto", sans-serif;	
-        font-size: 48px;	
-        font-weight: 900;		
-        line-height: 32px;	
-        text-align: center;
-        text-transform: uppercase;
-    }  
-
-    .title:after {
-        content: '';
-        width: 164px;
-        height: 7px;
-        background-color: #1abc9c;
-        display: block;
-        margin: 32px auto 0;
-    } 
-
-    .card {
-        width: 255px;
-        height: 322px;
-        background-color: #e9f0fd;
-        float: left;
-        margin-right: 30px;
-        margin-bottom: 100px;
-    }
-
-
-    .card:nth-child(4n) {
-        margin-right: 0;
-    }
-
-    .name, .price {
-        height: 40px;
-        width: 200px;
-        background-color: #323232;
-        float: left;
-        font-family:'Roboto', sans-serif; 
-        font-weight: 900;
-        color: #fff;
-        font-size: 18px;
-        line-height: 40px;
-        text-align: center;
-        text-transform: uppercase;
-    }
-
-    .price {
-        background-color: #8c8c8c;
-        width: 55px;
-    }
-
-    .card:hover .name {
-        background-color: #1abc9c;
-    }
-
-    .card:hover .price {
-        background-color: #7fd9c7;
-    }
-
-
-    .text {
-        color: #555252;		
-        font-size: 14px;
-        line-height: 26px;
-        text-align: justify;
-        margin-bottom: 16px;
-    }
-
-    .footer {
-        background-color: #323232;
-        padding-bottom: 33px;
-        padding-top: 38px;
-    }
-
-    .copyright {
-        color: #FEFEFE;
-        font-family:"Open Sans", sans-serif;
-        font-size: 16px;	
-        line-height: 28px;	
-        text-align: center;
-    }
-
-    .colortext {
-    color:  #4EC6AB;
-    }
-
-    .clearfix::after {
-        display: table;
-        content: '';
-        clear: both;
+    .title {
+    margin: auto;
     }

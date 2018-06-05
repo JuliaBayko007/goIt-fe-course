@@ -76,6 +76,10 @@
     width: 480px;
   }
 
+  .menu-link {
+    color: #4e4e4e;
+  }
+
   .menu-item {
     font-family: 'Montserrat', sans-serif;	
     font-size: 14px;	
@@ -229,13 +233,14 @@
   line-height: 22px;	
   text-align: center;
   padding: 25px 47px;
+  cursor: pointer;
 }
 
 
 .submit {
   display: flex;
   justify-content: center;
-
+  
  
 }
 
