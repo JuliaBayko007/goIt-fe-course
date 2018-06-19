@@ -1,68 +1,82 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;}
-    body {
-        font-family: 'Playfair Display','Ubuntu', sans-serif;
-        color: #626262;
-        font-size: 14px;
-        line-height: 17px;}
-.wrapper {
-    background-color: #ffffff;
-    padding-left: 150px;
-    padding-bottom: 71px;
-    padding-top: 75px;}
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 .container {
-    width: 901px;  
-    margin: auto;}
-.site-navigation li {
-    font-size: 14px;
-    list-style: none;
-    display: inline-block;
-    margin-right: 120px;}
-.fx{
+    display: grid;
+    grid-template: 100px 3f/100px auto 100px;
+    grid-gap: 3px;
+
+
+  
+}
+
+.header {
+    grid-area: header;
+}
+
+.Ads {
+    grid-area: a;
+}
+
+.article {
+    grid-area: Ar;
+}
+
+.menu {
+    grid-area: n;
+}
+
+.footer {
+    grid-area: f;
+}
+
+
+/*
+.box {
+    font-size: 2rem;
+    color: #ffeead;
     text-align: center;
-    display: block;
-    color: #626262;
-    text-transform: uppercase;
-    text-decoration: none;}
-.site-navigation a:hover {
-    color: #03a9f4;}  
-.page-header {
-    margin-bottom: 104px;} 
-.rows {
-    margin-bottom: 52px;}
-.row-list {
-    margin-right: 60px;
-    margin-bottom: 133px;
-    width: 420px;
-    display: inline-block;}
-.row-list:nth-child(2n+2) {
-    margin-right: 0px;}
-.row-list:nth-last-child(-n+2) {
-    margin-bottom: 0px;}
-.rows h3 {
-    list-style: none;
-    color: #626262;
-    font-size: 30px;
-    line-height: 36px;
-    margin-bottom: 41px;}
-.rows h2 {
-    color: #b4ad9e;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 17px;
-    margin-bottom: 28px;}
-.row-list-img {
-    width: 418px;
-    height: 280px;
-    margin-bottom: 31px;}
-    button {
-       display: block;
-        width: 165px;
-        height: 60px;
-        font-size: 20px;
-        line-height: 24px;
-        margin: auto;}
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:nth-child(1n) {
+    background-color: #96ceb4;
+}
+
+.box:nth-child(3n) {
+    background-color: #88d8b0;
+}
+
+.box:nth-child(2n) {
+    background-color: #ff6f69;
+}
+
+.box:nth-child(4n) {
+    background-color: #ffcc5c;
+}*/
+
+/*.header {
+    grid-column: 1/-1;
+    background-color:red;
+}
+
+.content {
+    grid-column: 2/-1;
+    background-color:blue;
+}
+
+.footer {
+    grid-column: 1/-1;
+    background-color:green;
+}*/
+
+
+   
           

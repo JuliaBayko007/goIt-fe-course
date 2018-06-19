@@ -1,15 +1,14 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} 
 
-html {
-  font-size: 10px;
-}
-body {
-  font-size: 1.6rem;
-}
+@import "reset.css";
+
+@import "container.css";
+
+@import "header.css";
+
+@import "main.css";
+
+
+
 
 @font-face {
   font-family: 'Roboto';
@@ -28,175 +27,8 @@ body {
   }
 
 
-  ul {
-    list-style: none;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  img {
-    display: block;
-    height: auto;
-    width: 100%;
-    margin: auto;
-  }
-
-  .wrapper {
-    background-color: #ffffff;
-   
-  }
-
-  .container {
-    min-width: 320px;
-    max-width: 940px;
-    margin: auto;
-    padding: 0 16px;
-  }
-
-  .header-wrapper {
-    background-image: url('../img/Vector Smart Object.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-
-  }
-
-  .header {
-    padding: 1,7rem 0;
-  }
-
-
-  .menu-link {
-    color: #FFFFFF;	
-    font-family: 'Montserrat', sans-serif;	
-    font-size: 1,4rem;	
-    font-weight: bold;	
-    line-height: 1,7rem;	
-    text-align: center;
-    color: #FFFFFF;
+ 
   
-  }
-
-  .menu-item {
-    display: inline-block;
-    margin-right: 2rem;
-    
-  }
-
-  .navigation {
-    margin-bottom: 11,5rem; 
-  }
-
-  .menu-item:hover {
-    border: 0,1rem solid #FFFFFF;
-    border-radius: 25%;
-    width: 9rem;
-    
-  }
-
-  .logo {
-    color: #FFFFFF;	
-    font-family: 'Montserrat', sans-serif;	
-    font-size: 2rem;	
-    font-weight: bold;	
-    line-height: 2,4rem;	
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  .title {
-    color: #FFFFFF;	
-    font-family: 'Montserrat';	
-    font-size: 2,8rem;	
-    font-weight: bold;	
-    line-height: 3,5rem;	
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  .subtitle {
-    color: #FFFFFF;	
-    font-family: 'Roboto', sans-serif;	
-    font-size: 1,7rem;	
-    font-weight: 300;	
-    line-height: 2,2rem;	
-    text-align: center;
-    margin-bottom: 2rem;
-
-  }
-
-  .search {
-    color: #FFFFFF;	
-    font-family: 'Montserrat', sans-serif;	
-    font-size: 1,4rem;	
-    font-weight: bold;	
-    line-height: 1,7rem;	
-    text-align: center;
-    border-radius: 20%;
-    background-color: #FF4E50;
-    padding: 1,2rem 5,2rem;
-    margin-bottom: 14rem;
-    margin: auto;
-
-  }
-
-  .search-main {
-    color:  #FF4E50;
-    font-family: 'Montserrat', sans-serif;	
-    font-size: 1,4rem;	
-    font-weight: bold;	
-    line-height: 1,7rem;	
-    text-align: center;
-    border-radius: 20%;
-    border: 0,1rem solid #FF4E50;
-    background-color: #FFFFFF;
-    margin:0 auto 5,7rem;
-
-  }
-
-  .main-title {
-    color: #333333;	
-    font-family: 'Montserrat', sans-serif;	
-    font-size: 2,3rem;	
-    font-weight: bold;	
-    line-height: 2,7rem;	
-    text-align: center;
-    margin-top: 6,7rem;
-  }
-
- /* .card-item {
-    margin-bottom: 2,7rem;
-  }*/
-
- /* .icon {
-    width: 1,6rem;
-    height: 1,6rem;
-    border: 0,1rem solid #FFFFFF;
-    border-radius: 45%;
-  }*/
-
-  .name {
-    color: #333333;	
-    font-family: 'Montserrat', sans-serif;	
-    font-size: 1,4rem;	
-    font-weight: bold;	
-    line-height: 1,7rem;	
-    text-align: center;
-    margin-bottom: 1,6rem;
-  }
-
-  .text {
-    color: #666666;	
-    font-family: 'Roboto', sans-serif;	
-    font-size: 1,4rem;	
-    font-weight: 300;	
-    line-height: 1,7rem;	
-    text-align: center;
-   
-  }
 
 
 

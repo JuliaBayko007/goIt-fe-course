@@ -1,0 +1,214 @@
+
+.header-wrapper {
+    background-image: url('../img/Vector Smart Object.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #181819;
+    background-blend-mode: difference;
+    padding-top: 1.7rem;
+    padding-bottom: 8.8rem;
+
+}
+
+.menu {
+    text-align: center;
+    margin-bottom: 7.8rem;
+}
+
+
+.menu-link {
+    color: #FFFFFF;	
+    font-family: 'Montserrat', sans-serif;	
+    font-size: 0.8rem;	
+    font-weight: bold;	
+    line-height: 1rem;	
+    text-align: center;
+    border-radius: 3.1rem;
+    padding: 0.6rem 1.4rem;
+    border: 0.12rem solid transparent;
+    
+}
+
+
+
+.menu-item {
+    display: inline-block;
+    margin: auto;
+    cursor: pointer;
+}
+
+.menu-link:hover {
+    border: 0.12rem solid #FFFFFF;
+    border-radius: 3.1rem;
+    padding: 0.6rem 1.4rem;
+  
+
+}
+
+.navigation {
+   margin: 0 auto;
+}
+
+.logo {
+    display: block;
+    color: #FFFFFF;	
+    font-family: 'Montserrat', sans-serif;	
+    font-size: 1.25rem;	
+    font-weight: bold;	
+    line-height: 1.5rem;
+    text-align: center;	
+    text-transform: uppercase;
+    margin:0 auto 2.5rem;
+   
+}
+
+
+
+.title {
+    color: #FFFFFF;	
+    font-family: 'Montserrat', sans-serif;	
+    font-size: 1.75rem;	
+    font-weight: bold;	
+    line-height: 2rem;	
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+}
+
+.subtitle {
+    color: #FFFFFF;	
+    font-family: 'Roboto', sans-serif;	
+    font-size: 1.15rem;	
+    font-weight: 300;	
+    line-height: 1.35rem;	
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.search {
+    color: #FFFFFF;	
+    font-family: 'Montserrat', sans-serif;	
+    font-size: 0.87rem;	
+    font-weight: bold;	
+    line-height: 1.1rem;	
+    text-align:center;
+    
+   
+}
+
+
+.button {
+    display: block;
+    background-color: #FF4E50;
+    border-radius: 3.1rem;
+    border: none;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+    cursor: pointer;
+}
+
+.white {
+    border: 0.125rem solid #FF4E50;
+    background-color: #Ffffff; 
+    padding-left: 4.35rem;
+    padding-right: 4.35rem;
+    margin-bottom: 3.56rem;
+}
+
+.color {
+   color:  #FF4E50;
+}
+
+@media (min-width: 768px) {
+
+    .header-wrapper {
+        padding-top: 2.37rem;
+    }
+ 
+    .navigation {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+    }
+
+    
+    .logo {
+        margin-right: 21.25rem;
+      
+        
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .menu-link {
+        width: 7rem;
+        display: block;
+    }
+
+    .menu:last-child {
+        margin-right: 0rem;
+    }
+
+
+    .title {
+       padding-left: 4rem;
+       padding-right: 4rem;
+        font-size: 3.25rem;
+        line-height: 3.9rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        margin-bottom: 2.12rem;
+    }
+
+
+    .button {
+        display: flex;
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+        margin: auto;
+    }
+
+    .white {
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+        margin-bottom: 2.56rem;
+     
+    }
+
+    @media (min-width: 1024px) {
+
+        .logo {
+            width: 11.12rem;
+            margin-bottom: 10rem;
+            margin-left: 0rem;
+        }
+
+        .menu-item {
+            margin-top: 0rem;
+        }
+
+        .title {
+            padding-left: 9rem;
+            padding-right: 9rem;
+        }
+
+        .white {
+            padding-left: 2rem;
+            padding-right: 2rem;
+    }
+
+    
+
+}
