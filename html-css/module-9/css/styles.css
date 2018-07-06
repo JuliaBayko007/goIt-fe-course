@@ -1,0 +1,36 @@
+
+@import "reset.css";
+
+@import "container.css";
+
+@import "header.css";
+
+@import "main.css";
+
+
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/RobotoLight/roboto-v18-latin-300.woff2')format('woff2'), 
+       url('../fonts/RobotoLight/roboto-v18-latin-300.woff')format('woff');
+  font-style: normal;
+  font-weight: 300;
+}
+    
+@font-face {
+    font-family: 'Montserrat';
+    src:url('../fonts/MontserratBold/montserrat-v12-latin-700.woff2')format('woff2'),
+        url('../fonts/MontserratBold/montserrat-v12-latin-700.woff')format('woff');
+    font-style: normal;
+    font-weight: 700;
+  }
+
+
+ 
+  
+
+
+
+
+

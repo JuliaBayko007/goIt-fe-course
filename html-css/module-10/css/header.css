@@ -1,0 +1,136 @@
+
+  .wrapper {
+    padding-top: 1.75rem;
+    padding-bottom: 14.37rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;	
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(243,129,129,.9)), to(rgba(252, 227, 138,.9))), url(../img/bg.jpg);	
+    background-image: -webkit-linear-gradient(top, rgba(243,129,129,.9) 0%, rgba(252, 227, 138,.9) 100%), url(../img/bg.jpg);	
+    background-image: -o-linear-gradient(top, rgba(243,129,129,.9) 0%, rgba(252, 227, 138,.9) 100%), url(../img/bg.jpg);	
+    background-image: linear-gradient(180deg, rgba(243,129,129,.9) 0%, rgba(252, 227, 138,.9) 100%), url(../img/bg.jpg);
+    width: 100%;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+    .wrapper{
+        background-image: url(../img/bg@2x.jpg)
+    }
+}
+  
+
+.nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.87rem;
+    line-height: 2.25rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+
+.menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 10.25rem;
+    width: 39.37rem;
+   }
+
+.menu__link {
+    font-family:'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 0.87rem;
+    line-height: 1rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.menu__icon {
+    fill: #FFFFFF;
+    width: 1.25rem;
+    height: 1.25rem;
+
+}
+  
+.menu__icon:hover {
+    fill:  #FCE38A;
+
+}
+
+
+.menu__link:hover {
+    border-bottom: 0.18rem solid; 
+    padding-bottom: 0.75rem; 
+    color:  #FCE38A;
+
+}
+
+.header-subtitle {
+    color: #FFFFFF;	
+    font-family: 'Kaushan Script', sans-serif;	
+    font-size: 4.5rem;	
+    line-height: 5.4rem;	
+    text-align: center;
+}
+
+.header-title {
+    color: #FFFFFF;	
+    font-family: 'Montserrat', sans-serif;	
+    font-size: 9.37rem;	
+    font-weight: bold;	
+    line-height: 8.75rem;	
+    text-align: center;
+    margin-bottom: 7.75rem; 
+}
+
+.header-btn {
+    display: block;
+    width: 10rem;
+    height: 2.5rem;
+    margin: 0rem auto;
+    border: 0.18rem solid #FFFFFF;	
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;	
+    font-size: 0.87rem;	
+    font-weight: bold;	
+    line-height: 1rem;	
+    text-align: center;
+    background-image: none; 
+    background: transparent;
+    background-color: transparent;
+  }
+
+
+
+/* .menu {
+
+
+&__item{
+
+}
+
+&__link {
+
+}
+
+
+} */
+
+/* menu{}
+
+menu__item {}
+
+menu__link {} */

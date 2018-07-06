@@ -1,0 +1,114 @@
+
+.header-wrapper {
+    background-image: url('../img/Vector Smart Object.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #181819;
+    background-blend-mode: difference;
+    padding-top: 1.7rem;
+    padding-bottom: 8.8rem;
+
+}
+
+
+.menu-link {
+    color: #FFFFFF;	
+    font-family: 'Montserrat', sans-serif;	
+    font-size: 0.8rem;	
+    font-weight: bold;	
+    line-height: 1rem;	
+    text-align: center;
+    border-radius: 3.1rem;
+    padding: 0.6rem 1.4rem;
+    border: 0.12rem solid transparent;
+    
+}
+
+
+
+.menu-item {
+    display: inline-block;
+    color: #FFFFFF;	
+    cursor: pointer;
+}
+
+.menu-link:hover {
+    border: 0.12rem solid #FFFFFF;
+    border-radius: 3.1rem;
+    padding: 0.6rem 1.4rem;
+  
+
+}
+
+
+.logo {
+    display: block;
+    color: #FFFFFF;	
+    font-family: 'Montserrat', sans-serif;	
+    font-size: 1.25rem;	
+    font-weight: bold;	
+    line-height: 1.5rem;
+    text-align: center;	
+    text-transform: uppercase;
+   
+   
+}
+
+
+
+.title {
+    color: #FFFFFF;	
+    font-family: 'Montserrat', sans-serif;	
+    font-size: 1.75rem;	
+    font-weight: bold;	
+    line-height: 2rem;	
+    text-align: center;
+    text-transform: uppercase;
+   
+}
+
+.header-text {
+    color: #FFFFFF;	
+    font-family: 'Roboto', sans-serif;	
+    font-size: 1.15rem;	
+    font-weight: 300;	
+    line-height: 1.35rem;	
+    text-align: center;
+
+}
+
+.search {
+    color: #FFFFFF;	
+    font-family: 'Montserrat', sans-serif;	
+    font-size: 0.87rem;	
+    font-weight: bold;	
+    line-height: 1.1rem;	
+    text-align:center;
+    
+   
+}
+
+
+.button {
+    background-color: #FF4E50;
+    border-radius: 3.1rem;
+    border: none;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+    cursor: pointer;
+}
+
+.white {
+    border: 0.125rem solid #FF4E50;
+    background-color: #Ffffff; 
+    padding-left: 4.35rem;
+    padding-right: 4.35rem;
+   
+}
+
+.color {
+   color:  #FF4E50;
+}
