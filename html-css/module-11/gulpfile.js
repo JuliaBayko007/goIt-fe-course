@@ -119,7 +119,7 @@ gulp.task('serve', ['styles'], () =>
 
 gulp.task('del:build', () => del('./build'));
 
-gulp.task('prepare', () => del(['**/.gitkeep', 'README.md', 'banner.png']));
+// gulp.task('prepare', () => del(['**/.gitkeep', 'README.md', 'banner.png']));
 
 gulp.task('build', cb =>
   sequence(
