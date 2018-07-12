@@ -111,26 +111,21 @@
     background-image: none; 
     background: transparent;
     background-color: transparent;
+    cursor: pointer;
+  }
+
+.a {
+    color: #FFFFFF;
+    }
+
+.a:hover {
+    color:  #FCE38A;   
+}
+
+.header-btn:hover {
+    color:  #FCE38A;
+    border-color: #FCE38A;	
+
   }
 
 
-
-/* .menu {
-
-
-&__item{
-
-}
-
-&__link {
-
-}
-
-
-} */
-
-/* menu{}
-
-menu__item {}
-
-menu__link {} */
