@@ -61,38 +61,36 @@
     color:  #FCE38A;
         }
     }
+
+    &__icon {
+        fill: #FFFFFF;
+        width: 1.25rem;
+        height: 1.25rem;
+
+        &:hover {
+            fill:  #FCE38A;
+        }
+    }
    }
 
-
-.menu__icon {
-    fill: #FFFFFF;
-    width: 1.25rem;
-    height: 1.25rem;
-
-}
-  
-.menu__icon:hover {
-    fill:  #FCE38A;
-
-}
-
-
-.header-subtitle {
+.header {
+    &__subtitle {
     color: #FFFFFF;	
     font-family: 'Kaushan Script', sans-serif;	
     font-size: 4.5rem;	
     line-height: 5.4rem;	
     text-align: center;
-}
+    }
 
-.header-title {
-    color: #FFFFFF;	
+    &__title {
+        color: #FFFFFF;	
     font-family: 'Montserrat', sans-serif;	
     font-size: 9.37rem;	
     font-weight: bold;	
     line-height: 8.75rem;	
     text-align: center;
-    margin-bottom: 7.75rem; 
+    margin-bottom: 7.75rem;   
+    }
 }
 
 .header-btn {
@@ -111,26 +109,6 @@
     background-image: none; 
     background: transparent;
     background-color: transparent;
-  }
-
-
-
-/* .menu {
-
-
-&__item{
-
-}
-
-&__link {
-
 }
 
 
-} */
-
-/* menu{}
-
-menu__item {}
-
-menu__link {} */

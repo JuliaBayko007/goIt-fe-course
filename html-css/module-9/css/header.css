@@ -117,6 +117,10 @@
     margin-bottom: 3.56rem;
 }
 
-.color {
+.color:active {
    color:  #FF4E50;
+}
+
+.color:visited {
+    color: #FF4E50;
 }
