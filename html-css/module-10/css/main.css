@@ -161,6 +161,7 @@
     -o-transition: 1s;
     transition: 1s;
     display: none;
+    cursor: pointer;
     
 }
 
@@ -229,6 +230,7 @@
     fill: #95e1d3;
     width: 2rem;
     height: 2rem;
+    border: 1px solid red;
 }
 
 
