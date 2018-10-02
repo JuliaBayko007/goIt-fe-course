@@ -135,3 +135,13 @@ const getUsersByFriend = (arr, name) => arr
 console.log(getUsersByFriend(users, 'Briana Decker')); 
 console.log(getUsersByFriend(users, 'Goldie Gentry'));
 
+/*const getAllSkills = (arr) => arr.reduce((acc, user) => acc + user.skills,[])
+.sort((a, b) => a.skills > b.skills)
+.filter((user, index,array) => user !== array[index +1])
+
+console.log(getAllSkills(users));*/
+
+const getUserNames = (arr) => arr
+.map( user => user.name);
+  
+console.log(getUserNames(users));

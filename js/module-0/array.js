@@ -124,7 +124,7 @@ dog.canBite = true;
 
 */
 
-function Tank(x, y, name, hp, armor, amunition, speed) {
+/*function Tank(x, y, name, hp, armor, amunition, speed) {
 
      this.x = x;
        this.y = y;
@@ -158,23 +158,101 @@ function Tank(x, y, name, hp, armor, amunition, speed) {
          return this.hp < 100;
        };
      }
-     let tiger = new Tank(10, 10, 'Tiger', 100, 100, 10, 50);
+
+     function Stels (x, y, name, hp, armor, amunition, speed, kamyflaj) {
+       Tank.call(this, x, y, name, hp, armor, amunition, speed);
+       this.kamyflaj = kamyflaj;
+     }
+     Stels.prototype = Object.create(Tank.prototype);
+     Stels.prototype.inviseActivator = function() {
+      console.log('Invis on');
+     }
+     let snake = newStels(50, 50,'Snake', 120, 100, 10, 60, true);
+
+     class Tank {
+       constructor(x, y, name, hp, armor, amunition, speed) {
+        this.x = x;
+        this.y = y;
+        this.name = name;
+        this.hp = hp;
+        this.armor = armor;
+        this.amunition = amunition;
+        this.speed = speed;
+       }
+       fire() {
+        this.canFire() ? this.amunition -= 1 : prompt('Enter card number');
+       }
+       move(a, b) {
+        this.x = a;
+        this.y = b;
+       }
+       repair (size) {
+        if (this.canRepair()) {
+          if (this.hp + size > 100) {
+            this.hp = 100;
+          } else {
+            this.hp += size;
+          }
+        } else {
+          alert('you are have full hp')
+        }
+      }
+     }
+
+     class Stels extends Tank {
+       constructor (x, y, name, hp, armor, amunition, speed, kamyflaj) {
+       super(x, y, name, hp, armor, amunition, speed);
+       this.kamyflaj = kamyflaj;}
+
+    /* let tiger = new Tank(10, 10, 'Tiger', 100, 100, 10, 50);
      let panzar = new Tank(20, 20, 'Panzar', 150, 50, 8, 80);
      let leopard = new Tank(30, 48, 'Leopard', 120, 30, 10, 100);
      console.log(tiger);
     console.log(panzar);
-    console.log(leopard);
+    console.log(leopard);*/
 
 
-// homework5
 
+class User {
+  constructor(name, gender, city) {
+    this._name = name;
+    this.gender = gender;
+    this.city = city;
+  }
 
- /*   const getAllSkills = (arr) => arr.reduce((acc, user) => acc + user.skills,[]);
-//.filter((user, index,array) => array.indexOf(user) === index)
-//.sort((a, b) => a.skills > b.skills)
+  static showPI () {
+    return Math.PI;
+  }
 
-console.log(getAllSkills(users));
+  get name() {
+    return this._name;
+  }
 
-const getUserNames = (arr) => arr.map( user => user.name);
-const friendsCount = (arr) =>  
-console.log(getUserNames(users));*/
+  set age(age) {
+    this._age = age;
+  }
+
+  get age() {
+    return this._age;
+  }
+
+  getFullInfo(){
+return `My name is ${this.name} i am ${this.gender}`;
+  }
+
+  showCity () {
+    return `I live in ${this.city}`;
+  }
+}
+
+let Ivan = new User('Ivan', 'male', 'Kiev');
+//Ivan.name = 'Bob';
+console.log(Ivan);
+//console.log(Ivan.getFullInfo());
+console.log(Ivan.name);
+//Ivan.name = 'Bob';
+console.log(Ivan.name);
+Ivan.age = 25;
+console.log(User.showPI());
+User.a = 5;
+console.log(User.a);

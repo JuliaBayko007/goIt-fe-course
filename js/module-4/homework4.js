@@ -21,61 +21,40 @@ function Cashier(name, productDatabase) {
     this.customerMoney = 0;
     this.getCustomerMoney = function (value) {
       this.customerMoney = value;
+      return this.customerMoney;
     };
     this.countTotalPrice = function (order) {
-      let totalPrice = 0;
+      this.totalPrice = 0;
       for(let key in order) {
-       this.productDatabase[key] * order[key];
-       totalPrice = totalPrice + order[key];
+       this.totalPrice += this.productDatabase[key] * order[key];
       }
-      return totalPrice;
+      return this.totalPrice;
     }
     this.countChange = function (totalPrice) {
-      let change = this.customerMoney - this.countTotalPrice;
-      if(this.customerMoney < totalPrice) {
-        return this.onError();
-      } else { 
-        if(change !== null) {
-        
-         this.onSuccess(change); 
-         return this.reset()
-       } ;
+      const change = this.customerMoney - this.totalPrice;
+     if(this.customerMoney < this.totalPrice) {
+        return null;
+      } return change;
       
-      }
-    }
+      if(change !== null) {
+      return this.onSuccess(change); 
+     } else {
+       return this.onError(); 
+     }
+    };
+        
     this.onError = function (){
-      console.log('Очень жаль, вам не хватает денег на покупки')
-      return this.reset()
+      console.log('Очень жаль, вам не хватает денег на покупки');
     };
     this.onSuccess = function (change) {
       console.log(`Спасибо за покупку, ваша сдача ${change}!`);
-      return this.reset()
     };
     this.reset = function() {
       this.customerMoney  = 0;
-    }
+    };
 
 
 };
 
 
 
-  
-  
-
-
-
-const mango = new Cashier('Mango', products);
-
-//mango.getCustomerMoney(300);
-
-console.log(mango.name); // Mango
-console.log(mango.productDatabase); // ссылка на базу данных продуктов (объект products)
-console.log(mango.customerMoney);
-
-const totalPrice = mango.countTotalPrice(order);
-console.log(totalPrice);
-mango.getCustomerMoney(300);
-console.log(mango.customerMoney);
-const change = mango.countChange();
-console.log(change);
