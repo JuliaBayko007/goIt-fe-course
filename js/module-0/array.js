@@ -213,7 +213,7 @@ dog.canBite = true;
 
 
 
-class User {
+/*class User {
   constructor(name, gender, city) {
     this._name = name;
     this.gender = gender;
@@ -256,3 +256,4 @@ Ivan.age = 25;
 console.log(User.showPI());
 User.a = 5;
 console.log(User.a);
+*/
