@@ -1,7 +1,7 @@
 "use strict";
 const galleryItems = [
-  { preview: '../img/preview-1.jpg', fullview: 'img/fullview-1.jpg', alt: "alt text 1" },
-  { preview: '../img/preview-2.jpg', fullview: 'img/fullview-2.jpg', alt: "alt text 2" },
+  { preview: 'img/preview-1.jpg', fullview: 'img/fullview-1.jpg', alt: "alt text 1" },
+  { preview: 'img/preview-2.jpg', fullview: 'img/fullview-2.jpg', alt: "alt text 2" },
   { preview: 'img/preview-3.jpeg', fullview: 'img/fullview-3.jpeg', alt: "alt text 3" },
   { preview: 'img/preview-4.jpeg', fullview: 'img/fullview-4.jpeg', alt: "alt text 4" },
   { preview: 'img/preview-5.jpeg', fullview: 'img/fullview-5.jpeg', alt: "alt text 5" },
@@ -26,32 +26,41 @@ fullview.classList.add('fullview');
 gallery.prepend(fullview);
 const imgFullview = document.createElement('img');
 imgFullview.classList.add('imgFull');
-imgFullview.setAttribute('src', galleryItems.fullview); // ?????
-imgFullview.setAttribute('alt', 'alt text 1');
+imgFullview.setAttribute('alt', 'alt text');
+imgFullview.setAttribute('src', '')
 fullview.append(imgFullview);
-let bigImg = document.querySelector('.imgFull');
 
+const ul = document.createElement('ul');
 
+ul.classList.add('preview');
+gallery.append(ul);
 
-const preview = document.createElement('ul');
+function createGallery (arr){
 
-preview.classList.add('preview');
-gallery.append(preview);
-function createGallery (arr, idx, el){
+for(let el of arr) {
+const li = document.createElement('li');
+let img = document.createElement('img');
+li.classList.add('prev');
+img.setAttribute('src', el.preview );
+img.setAttribute('data-fullview', el.fullview);
+img.setAttribute('alt', 'alt text');
+li.append(img)
+ul.append(li);
+}
+return;
+}
+createGallery(galleryItems);
 
-const imgPreview = document.createElement('li');
-imgPreview.setAttribute('src', el.preview );
-imgPreview.setAttribute('data-fullview', el.fullview);
-imgPreview.setAttribute('alt', 'alt text 1');
-preview.append(imgPreview);
+gallery.addEventListener('click', onGalleryClick);
+function onGalleryClick(event){
+  const full = event
+  
 
-let target = event.target;
-
-return ;
 }
 
-
-
+/*function showImgSrc(event){
+  return event.target.src;
+}*/
 
 
 

@@ -9,7 +9,7 @@ localStorage.setItem('array', JSON.stringify(arr2));
 localStorage.removeItem('array');
 localStorage.clear();*/
 
-let text = document.querySelector('[type="text"]');
+/*let text = document.querySelector('[type="text"]');
 let form = document.querySelector('form');
 let ul = document.querySelector('ul');
 let taskArr = [];
@@ -62,8 +62,89 @@ function deleteLi() {
 
 window.addEventListener('DOMContentLoaded', paintFromStorage);
 form.addEventListener('submit', readValue);
-ul.addEventListener('click', deleteLi);
+ul.addEventListener('click', deleteLi);*/
 
+// 10cw
+/*
+const source = document.querySelector('#address-template').innerHTML.trim();
+const temp = Handlebars.compile(source);
+const context = {
+    "city": "London",
+    "street": "Baker Street",
+    "number": "221B"
+};
 
+const markup = temp(context);
+const container = document.querySelector('.content-placeholder')
+console.log(markup);
+container.innerHTML = markup;*/
 
- 
+// const data = {
+//     people: [
+//         {firstName: 'Homer', lastName: 'Simpson'},
+//         {firstName: 'Peter', lastName: 'Griffin'},
+//         {firstName: 'Eric', lastName: 'Cartman'},
+//         {firstName: 'Kenny', lastName: 'McCormick'},
+//         {firstName: 'Bart', lastName: 'Simpson'}
+//     ]
+// };
+/*const menuData = {
+    title: 'Eat it createElement, templates rule!',
+    items: ['Handlebars', 'LoDash', 'Pug', 'EJS']
+};
+// const source = document.querySelector('#example-template').innerHTML.trim();
+// const templateFunc = Handlebars.compile(source);
+// const markup = templateFunc(data);
+// console.log(markup);
+// const container = document.querySelector('.content-placeholder');
+// container.innerHTML = markup;
+
+const sorce = document.querySelector("#menu").innerHTML.trim();
+console.log(sorce)
+const nextTemp = Handlebars.compile(sorce);
+const next = nextTemp(menuData);
+const box = document.querySelector('.content-placeholder');
+box.innerHTML = next;
+*/
+/*
+const data = {
+    animals: [
+        {
+            name: "cow",
+            noise: "moooo"
+        },
+        {
+            name: "cat",
+            noise: "meow"
+        },
+        {
+            name: "fish",
+            noise: ""
+        },
+        {
+            name: "farmer",
+            noise: "Get off my property!"
+        }
+    ]
+};
+
+let source = document.querySelector('#built-in-helpers-template').innerHTML.trim();
+let tmp = Handlebars.compile(source);
+let mark = tmp(data);
+let container = document.querySelector('.content-placeholder');
+container.innerHTML = mark;
+*/
+const gallery = {
+    title: 'Gallery',
+    items: [
+        {img: 'https://placeimg.com/300/150/animals', text: 'animals'},
+        {img: 'https://placeimg.com/300/150/arch', text: 'architecture'},
+        {img: 'https://placeimg.com/300/150/nature', text: 'nature'},
+        {img: 'https://placeimg.com/300/150/people', text: 'people'},
+        {img: 'https://placeimg.com/300/150/tech', text: 'tech'},
+        {img: 'https://placeimg.com/300/150/any', text: 'random'}
+    ]
+};
+
+let source = document.querySelector('#gal-temp').innerHTML.trim();
+let tmp = Handlebars.co

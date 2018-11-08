@@ -1,2 +1,9 @@
-
-  
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+  .prev {
+     flex-basis: 33%; 
+     margin-bottom: 10px;
+  }
