@@ -7,27 +7,13 @@ const galleryItems = [
   { preview: 'img/preview-5.jpeg', fullview: 'img/fullview-5.jpeg', alt: "alt text 5" },
   { preview: 'img/preview-6.jpeg', fullview: 'img/fullview-6.jpeg', alt: "alt text 6" },
 ];
-/*<div class="fullview">
-<!-- Если выбран первый элемент из preview -->
-<img src="img/fullview-1.jpeg" alt="alt text 1">
-</div>
-<!-- li будет столько, сколько объектов в массиве картинок. Эти 3 для примера -->
-<ul class="preview">
-<li><img src="img/preview-1.jpeg" data-fullview="img/fullview-1.jpeg" alt="alt text 1"></li>
-<li><img src="img/preview-2.jpeg" data-fullview="img/fullview-2.jpeg" alt="alt text 2"></li>
-<li><img src="img/preview-3.jpeg" data-fullview="img/fullview-3.jpeg" alt="alt text 3"></li>
-</ul>
-</div>  */
 
-
-const gallery = document.querySelector('div');
+const gallery = document.querySelector('.js-image-gallery');
 const fullview = document.createElement('div');
 fullview.classList.add('fullview');
 gallery.prepend(fullview);
 const imgFullview = document.createElement('img');
 imgFullview.classList.add('imgFull');
-imgFullview.setAttribute('alt', 'alt text');
-imgFullview.setAttribute('src', '')
 fullview.append(imgFullview);
 
 const ul = document.createElement('ul');
@@ -51,19 +37,28 @@ return;
 }
 createGallery(galleryItems);
 
-gallery.addEventListener('click', onGalleryClick);
-function onGalleryClick(event){
-  const full = event
-  
+ul.addEventListener('click', getImage);
 
+function getImage (event) {
+  const target = event.target;
+  const name = target.nodeName;
+  if(name !== 'IMG') {
+    return;
+  } getThisImg(target);
 }
 
-/*function showImgSrc(event){
-  return event.target.src;
-}*/
-
-
-
+function getThisImg (pointedImg) {
+const src = pointedImg.getAttribute('data-fullview');
+const previousImg = ul.querySelector('li img.focused');
+if (previousImg) {
+  previousImg.classList.remove('focused');
+}
+pointedImg.classList.add('focused');
+imgFullview.setAttribute('src', src);
+}
+const itemArr = document.querySelectorAll('li');
+itemArr[0].classList.add('focused');
+imgFullview.setAttribute('src', galleryItems[0].fullview);
 
 
 

@@ -52,4 +52,6 @@ function createCards(arr) {
     createPostCard(arr);
 return;
 }
+
 createCards(posts);
+
