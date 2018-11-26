@@ -117,6 +117,7 @@ const laptops = [
       for(let el of laptops){
         if(filter.release_date.includes(String(el.release_date)) && filter.size.includes(String(el.size)) && filter.color.includes(el.color)) {
           return filter ;
+          
          };
          console.log(filter);
       };
