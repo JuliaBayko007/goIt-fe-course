@@ -53,7 +53,7 @@ class Timer {
                 this.onTick({ minutes, second, millisec });
             }, 100);
             startBtn.textContent = 'Pause';
-            this.lap();
+        
         
         } else {
             this.isActive = false;
