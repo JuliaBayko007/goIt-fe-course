@@ -9,6 +9,7 @@ const li = document.querySelectorAll('li');
 const lapArr = [];
 
 
+
 class Timer {
     constructor({ onTick }) {
         this.startTime = null;
