@@ -1,5 +1,6 @@
 "use strict";
-const laptops = [
+const obj ={
+  laptops: [
     {
       size: 13,
       color: 'white',
@@ -90,12 +91,14 @@ const laptops = [
       descr:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, beatae.',
     },
-  ];
+  ]
+}
 
   const source = document.querySelector('#card').innerHTML.trim();
   const template = Handlebars.compile(source);
-  const markup = laptops.reduce((acc, el) => acc + template(el), '');
- // const markup = template(laptops);
+  // const markup = laptops.reduce((acc, el) => acc + template(el), '');
+  
+ const markup = template(obj);
   //const cards = laptops.reduce((acc, el)=> acc + template(el),'');
   const filter = { size: [], color: [], release_date: [] };
   const container = document.querySelector('.container');
@@ -116,7 +119,7 @@ const laptops = [
       console.log(filter);
       for(let el of laptops){
         if(filter.release_date.includes(String(el.release_date)) && filter.size.includes(String(el.size)) && filter.color.includes(el.color)) {
-          return filter ;
+          return el ;
           
          };
          console.log(filter);

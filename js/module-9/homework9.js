@@ -15,6 +15,7 @@ class Timer {
         this.startTime = null;
         this.deltaTime = null;
         this.timerId = null;
+        this.lapTime = null;
         this.isActive = false;
         this.onTick = onTick;
     };
@@ -75,25 +76,13 @@ stop() {
 
 
  lap() {
-    if (this.isActive === true) {
-        const currentTime = Date.now();
-        this.deltaTime = currentTime - this.startTime;
-        const time = new Date(this.deltaTime);
-        const min = time.getMinutes();
-        const sec = time.getSeconds();
-        const ms = Number.parseInt(time.getMilliseconds() / 10);
-        const minutes = min >= 10 ? min : `0${min}`;
-        const second = sec >= 10 ? sec : `0${sec}`;
-        const millisec = ms >= 10 ? ms : `0${ms}`;
-        this.onTick({ minutes, second, millisec });
-        const lapLi = document.createElement('li');
-        laps.prepend(lapLi);
-        let lapText = `${minutes}:${second}:${millisec}`;
-        lapLi.textContent = lapText ;
-        
-        lapArr.push(lapText);
-    };
- };
+  
+    const lapLi = document.createElement('li');
+    laps.prepend(lapLi);
+    lapLi.textContent = time.textContent;
+    lapArr.push(lapLi.textContent);
+    
+    } ;
 };
 
 const timer = new Timer ({
@@ -108,6 +97,7 @@ lapBtn.addEventListener('click', timer.lap.bind(timer));
 function updateTime ({ minutes, second, millisec }) {
     time.textContent = `${minutes}:${second}:${millisec}`;
 };
+
 
 
 
