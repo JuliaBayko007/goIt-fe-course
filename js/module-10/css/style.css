@@ -1,2 +1,41 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background: #fff;
+  }
+  .wrapper {
+      padding: 15px;
+  }
+  .section{
+    display: flex;
+    justify-content: space-around;
+  }
+  .getAll, .getUserById{
+    flex-basis: 380px;
+    padding-top: 20px;
+  }
+  .getUserById{
+    flex-basis: 300px;
+  }
+  .addUser, .removeUser, .updateUser{
+    flex-basis: 100px;
+    padding-top: 20px;
+  }
+  input{
+    margin: 5px 0;
+  }
+  .mdc-btn {
+    width: 70px;
+    margin-top: 10px;
+    height: 28px;
+    padding: 0 14px;
+    border: 0;
+    outline: 0;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color:#570079;
+    cursor: pointer;
 
-  
+  }

@@ -96,13 +96,11 @@ const obj ={
 
   const source = document.querySelector('#card').innerHTML.trim();
   const template = Handlebars.compile(source);
-  // const markup = laptops.reduce((acc, el) => acc + template(el), '');
-  
- const markup = template(obj);
-  //const cards = laptops.reduce((acc, el)=> acc + template(el),'');
+  const markup = template(obj);
+
   const filter = { size: [], color: [], release_date: [] };
   const container = document.querySelector('.container');
-  //container.innerHTML = markup;
+  container.innerHTML = markup;
 
   console.log(markup);
 
@@ -117,9 +115,10 @@ const obj ={
     });
 
       console.log(filter);
-      for(let el of laptops){
-        if(filter.release_date.includes(String(el.release_date)) && filter.size.includes(String(el.size)) && filter.color.includes(el.color)) {
-          return el ;
+      for(let key in obj){
+        if(filter.release_date.includes(String(obj.release_date)) && filter.size.includes(String(el.size)) && filter.color.includes(el.color)) {
+          return key ;
+         // console.log()
           
          };
          console.log(filter);
@@ -129,7 +128,7 @@ console.log(filter);
 
 
 
-    console.log('laptops',laptops);
+  
   
   
       
